@@ -1,38 +1,41 @@
 <?php
 
-class Solution{
+class Solution
+{
     /**
      * @param Integer $x
      * @return Boolean
      */
-    function isPalindromeBruteForce($x) {
+    function isPalindromeBruteForce($x)
+    {
         $temp = $x;
         $new = 0;
-        while (floor($temp)){
+        while (floor($temp)) {
             $d = $temp % 10;
             $new = $new * 10 + $d;
-            $temp = $temp/10;
+            $temp = $temp / 10;
         }
-        if($new == $x){
+        if ($new == $x) {
             return "True";
-        }else{
+        } else {
             return "False";
         }
     }
 
-    function isPalindromeOptimal($x){
-        if($x<0){
+    function isPalindromeOptimal($x)
+    {
+        if ($x < 0) {
             return "False";
         }
         $reversed_num = 0;
         $original_x = $x;
-        while (floor($x)>0){
-            $reversed_num = ($reversed_num * 10) + ($x%10);
-            $x = $x/10;
+        while (floor($x) > 0) {
+            $reversed_num = ($reversed_num * 10) + ($x % 10);
+            $x = $x / 10;
         }
-        if($original_x == $reversed_num){
+        if ($original_x == $reversed_num) {
             return "True";
-        }else{
+        } else {
             return "False";
         }
     }
