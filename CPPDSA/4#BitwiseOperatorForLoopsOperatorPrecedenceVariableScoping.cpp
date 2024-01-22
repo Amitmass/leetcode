@@ -32,7 +32,7 @@ int main()
     int count;
     cout<<"ENter a number: "<<endl;
     cin>>count;
-    cout<<"Printing Nuber from 1 to n"<<endl;
+    cout<<"Printing Number from 1 to n"<<endl;
     for(int i = 1; i<=count;i++){
         cout<<i<<endl;
     }

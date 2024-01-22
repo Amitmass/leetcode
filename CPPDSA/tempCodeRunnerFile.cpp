@@ -1,2 +1,2 @@
-
-    cout<<(--n)<<endl;
+ << ans << endl;
+    return 0;
