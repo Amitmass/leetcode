@@ -107,5 +107,39 @@ int main()
     }
 
     // Operator Precedence
+
+    cout<<endl;
+    cout<<"Quest CHeck"<<endl;
+
+    for(int cont = 0; cont <= 15; cont +=2){
+        cout<< cont <<" ";
+
+        if(cont&1){
+            continue;
+        }
+        cont++;
+    }
+
+    cout<<endl;
+    cout<<"Quest CHeck"<<endl;
+
+    for(int i = 0; i<5; i++){
+        for(int j = i; j <= 5; j++){
+            cout<<i<<" "<< j<<endl;
+        }
+    }
+
+    cout<<endl;
+    cout<<"Quest CHeck"<<endl;
+
+    for(int i = 0; i<5; i++){
+        for(int j = i; j <= 5; j++){
+            
+            if(i+j ==10){
+                break;
+            }
+            cout<<i<<" "<< j<<endl;
+        }
+    }
     return 0;
 }
